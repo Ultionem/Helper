@@ -1,0 +1,116 @@
+#Симантика# #БЭМ#
+
+<Header id="header" class="header">
+	<nav class= "header__button">
+		<button class="button_theme_islands">
+			<img src="image/umbrella.gif" alt="Зонтик" 
+	          style="vertical-align: middle"> Кнопка с рисунком
+	     </button> <!-- Кнопка с изоброжением -->
+	     <input type="text"><!-- Строка -->
+	     <input type="radio"><!-- Галочка -->
+ 	</nav>
+</Header>
+
+<main>
+	 <article>
+	 	<section></section>
+	 	<aside></aside>
+	 </article><!-- В центе -->
+
+	 <aside></aside><!--Сбоку в центри -->
+</main>
+
+<footer>
+	<nav></nav>
+	<nav></nav>
+</footer>
+-------------------------------------------------------
+#Теги#
+
+<p></p> <!-- Порагроф -->
+<br> <!-- Отступ -->
+----------------
+<ul>
+	<li></li> <!-- Список --> ul>li*5
+	<li></li>
+</ul>
+		<style>
+		   li {
+		    list-style-type: none; /* Убираем маркеры */
+		   }
+		   ul {
+		    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+		    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+		   }
+		</style>
+----------------
+<a href="#">Имя ссылки</a>
+
+		<style type="text/css">
+			a { text-decoration: none; } /* Убирает подчеркнутую сылку */
+			a:hover {text-decoration: none;}
+		</style>
+----------------
+<dl>
+  <dt>Термин 1</dt>
+    <dd>Описание термина 1</dd> <!-- Cписка описаний --> dl>dt>dd>{текст}
+  <dt>Термин 2</dt>
+   <dd>Описание термина 2</dd>
+</dl>
+----------------
+<picture>
+   <source srcset="image/html5-logo.svg">
+   <img src="image/html5-logo.png" width="256" height="256" alt="HTML5">
+</picture>                                    <!-- Изоброжение в изоброжении -->
+----------------
+<figure>
+    <p><img src="image/thumb1.jpg" alt=""></p>
+    <figcaption>Софийский собор</figcaption>
+</figure>                                     <!-- Изоброжение с описанием -->
+----------------
+#События#
+
+<form action="" method=""> <!-- Адрис програмы, Метод протокола HTTP -->
+ <input type="text" name="post"> <!-- Уневерсальный инструмент взоимодействия СТРОКА -->
+ <input  size="" >  <!-- Длина -->
+ <button type="submit"></button> <!-- Кнопка -->
+ <input type="" name=""> <!-- Устанавливает тип кнопки, Имя -->
+ <input type="submit" > <!-- Тоже кнопка -->
+ <input type="submit" value="Отправить" > <!-- Кнопка со своим текстом -->
+ <input type="reset" value="Очистить"> <!-- Кнопка зброс-->
+ <textarea cols="" rows="" ></textarea> <!-- Поле заполнения Колонки. Ряды. -->
+</form>
+----------------
+Пример
+
+<form action="">
+	<input type="text" placeholder="Поиск">   <!-- Поисковая строка -->
+	<button type="submit"><em>img</em></button> <!-- Кнопка -->		
+</form>
+
+<form action="handler.php">
+  	<p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
+  	<p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
+  	<input type="radio" name="answer" value="a2">Операционная система<Br>
+  	<input type="radio" name="answer" value="a3">Большой полосатый мух</p>
+  	<p><input type="submit"></p>
+</form>
+
+<form name="test" method="post" action="input1.php">
+  <p><b>Ваше имя:</b><br>
+   <input type="text" size="40" name="nick">
+  </p>
+  <p><b>Каким браузером в основном пользуетесь:</b><Br>
+   <input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+   <input type="radio" name="browser" value="opera"> Opera<Br>
+   <input type="radio" name="browser" value="firefox"> Firefox<Br>
+  </p>
+  <p>Комментарий<Br>
+   <textarea name="comment" cols="40" rows="3"></textarea></p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+</form>
+
+
+
+

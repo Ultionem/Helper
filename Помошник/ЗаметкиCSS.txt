@@ -1,0 +1,114 @@
+#CSS 
+
+#Текст 
+{text-transform: lowercase;}/*Строчные буквы*/
+{text-transform: uppercase;} /*Заглавные буквы*/
+{text-shadow: 1px 1px 2px black, 0 0 1em red;} ts /*тень*/
+{text-indent: 1.5em;} ti /*(отступ)Красноя сторка*/
+{text-align: left: 
+             right: 
+             center:
+             justify;} ta /*Выравнивоние текста*/
+{text-align-last} /*Выравнивоние последней строчки*/
+{text-decoration: underline;} /*Подчоркнутый*/
+
+{line-height: 1.5;} lh /*Растояние от текста по вертикали*/
+
+{font-family: monospace;} /*Шрифт печатгной машинки*/
+{font-family: Georgia, 'Times New Roman', Times, serif;} /*Шрифты 3*/
+
+{font-size: 10px;} fz10 /*Размер букв*/
+{font-style: italic;} fs/*Курсив*/
+{font-weight: 100-900; bold;} /*Жирный. Насышеность*/
+
+{writing-mode: vertical-lr; text-orientation: upright;} /*написание сверху в низ*/  
+      
+{display: block} /*Элемент показывается как блочный*/
+{display: inline} /*Элемент отображается как строчный*/
+
+#Позиционирование
+
+{position: absolute;} /* Абсолютное позиционирование */
+{position: relative;} /* Относительное позиционирование */
+{overflow: auto;} /*Прокрутка*/
+{position: fixed;} /*Как absolute но без прокрутки*/
+
+{   min-height}
+{   min-width: 70px; /*минимальная ширена контенера*/
+    width: 20%;
+    background-color:  rgba(167, 164, 151, 0.349);
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 3px 0px rgba(39, 39, 37, 0.692);}
+
+{   height: 200px; /* Высота блока */
+    width: 200px; /* Ширина блока */
+    overflow: auto;} /* Добавляем полосы прокрутки */
+
+{float: left 
+        right 
+        none} /*Выравнивание текста, содежимого, фото*/
+{   border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;} /*Радиус закругления рамки*/
+
+#Фон
+
+{background: url(/example/image/hand.png) repeat-y #fc0;} 
+            /*Путь к фоновому изображению, повторение фона по вертикали, цвет фона */
+
+{background-image: url(/example/image/bg.jpg);} /* Путь к фоновому изображению */
+{background-color: rgba(0, 120, 201, 0.7);} /* Цвет фона и значение ||прозрачности|| */
+
+{background-repeat: no-repeat:/* Отменяем повторение фона */
+                    repeat:
+                    repeat-x:
+                    repeat-y:
+                    space:
+                    round;} /*Повторение фона */
+{background-position: right bottom: /* Положение фона */
+                      center bottom:
+                      center center;
+                      left bottom;}
+{background-size: cover: /* Масштабируем фон */
+                  auto:
+                  auto 100%:
+                  100% auto:
+                  100% 100%:
+                  contain;}
+{background-attachment: fixed: /* Фиксируем фон веб-страницы */
+                        scroll:
+                        local;}
+--------------------------
+Пример
+{background-image: url(/example/image/pattern-left.png), 
+                   url(/example/image/pattern-right.png);
+    background-repeat: repeat-y, repeat-y;
+    background-position: left, right;
+    background-attachment: fixed, fixed;} /*Фиксированый фон по 2-м краям*/
+{background-clip} 
+/*Определяет, как цвет фона или фоновая картинка должна выводиться под границами.*/
+--------------------------
+>p - толька к <p>
+-- - добавить
+
+#Шрифт
+
+@font-face {
+    font-family: Raleway, "Times New Roman", Times, serif;
+    src: url(Raleway.ttf);
+    /* Путь к файлу со шрифтом */
+}
+a { 
+    font-family: Raleway, "Times New Roman", Times, serif;
+}
+
+#Действие
+
+a:hover {
+  text-decoration: none;}
+
+{ -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;} /*Замидление*/
+
